@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/result', [App\Http\Controllers\CacheController::class, 'result'])->name('result');
